@@ -15,7 +15,7 @@ class IncrementTest extends \PHPUnit_Framework_TestCase
         ];
 
         foreach ($data as $spec) {
-            $inc = Increment::$spec[0]();
+            $inc = call_user_func([Increment::class, $spec[0]]);
             $this->assertEquals($inc($spec[1]), $spec[2]);
             $this->assertEquals($inc->next($spec[1]), $spec[3]);
             $this->assertEquals($inc->previous($spec[1]), $spec[4]);
