@@ -1,0 +1,26 @@
+{
+    "name": "jnjxp/rinc",
+    "description": "Round numbers to increments",
+    "homepage":"https://github.com/jnjxp/jnjxp.rinc",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jake johns",
+            "email": "jake@jakejohns.net"
+        }
+    ],
+    "require": {
+    },
+    "require-dev":{
+    },
+    "autoload": {
+        "psr-4": {
+            "Jnjxp\\Rinc\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jnjxp\\Rinc\\":"tests/"
+        }
+    }
+}
